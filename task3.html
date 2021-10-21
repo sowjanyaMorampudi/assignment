@@ -1,0 +1,209 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float using css</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+    <style>
+        .img {
+            float: right;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+        
+        #about {
+            padding: 10px;
+        }
+        
+        nav {
+            padding: 10px;
+        }
+        
+        .card {
+            border-radius: 20px;
+            background-color: yellow;
+            text-align: center;
+            border-style: solid;
+            border-width: 1px;
+            border: color #e5eaf4;
+            margin-right: 16px;
+            padding: 10px;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        .image {
+            width: 87px;
+            height: 90px;
+            border-radius: 10px;
+        }
+        
+        .h1 {
+            color: #7b8794;
+            font-family: "Roboto";
+            font-size: 22px;
+            font-weight: 500;
+        }
+        
+        .p {
+            color: #7b8794;
+            font-family: "roboto";
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAHXPluq6GtTRPDIHRv5kJPy86uFjp5sO7hg&usqp=CAU" width="90px" height="100px" float="left" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="navItem1" href="#about">
+                about
+                <span class="sr-only">(current)</span>
+              </a>
+                    <a class="nav-link" href="#projects" id="navItem2">projects</a>
+                    <a class="nav-link" href="#skills" id="navItem3">skills</a>
+                    <a class="nav-link" href="#footer" id="navItem4">footer</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div id="about" style="background-color:lavenderblush;">
+        <img class="img" src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZGV2ZWxvcGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" width="195px" height="100px">
+        <h1 style="color: cornflowerblue;font-style: italic;">about me</h1>
+        <p style="color: #7b8794;">hey friends, i am sowjanya.software development engineer-traine in west agile it labs.<br/>i have complted my b.tech in mist with 7.7cgpa.<br/> i have secured with 89% in my intermediate and i secured with 95% in my 10th standerded.having knowledge
+            in html,css,java script,pythonand sql.</p><br/>
+        <button style="background-color: darkgreen;border-radius: 10px; border-width: 2px;border-style: dashed;border-color: crimson;">more about me</button>
+    </div>
+
+
+    <div id="projects" style="text-align: center;background-image: url(https://images.unsplash.com/photo-1572177812156-58036aae439c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80);background-size: cover;">
+        <h1 style="color: cornflowerblue;font-style: italic;">about projects</h1>
+        <div class="container">
+
+            <div class="card m-3 p-3">
+                <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/09/Bibimpap-korean-food-1296x728-header.jpg?w=1155&h=1528" class="image" />
+                <h1 class="h1">food munch application</h1>
+                <p class="p">using html,css,java script</p>
+
+
+            </div>
+            <div class=" card m-3 p-3 ">
+                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/beach-quotes-1559667853.jpg " class="image" />
+                <h1 class="h1">tourism application</h1>
+                <p class="p">using html,css,java script
+                </p>
+
+
+            </div>
+            <div class="card m-3 p-3">
+                <img src="https://www.shareicon.net/data/2015/09/19/103711_wikipedia_512x512.png" class="image" />
+                <h1 class="h1">wiki application</h1>
+                <p class="p">using html,css,java script
+                </p>
+
+
+            </div>
+
+
+            <div class="card m-3 p-3">
+                <img src="https://image.shutterstock.com/image-photo/woman-using-login-interface-on-260nw-483170893.jpg" class="image" />
+                <h1 class="h1">login page</h1>
+                <p class="p">using html,css,java script</p>
+
+
+            </div>
+            <div class=" card m-3 p-3 ">
+                <img src="https://media.istockphoto.com/photos/oops-little-girl-laughing-picture-id1172643701?k=20&m=1172643701&s=612x612&w=0&h=VMgpcB4gfR-TjVm7uxTXbc7LcvM-PIOaxPACwfNXCwc=" class="image" />
+                <h1 class="h1">random joke page</h1>
+                <p class="p">using html,css,java script
+                </p>
+
+
+            </div>
+            <div class="card m-3 p-3">
+                <img src="https://images.unsplash.com/photo-1611125832047-1d7ad1e8e48f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FsY3VsYXRvcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" class="image" />
+                <h1 class="h1">calculator project</h1>
+                <p class="p">using html,css,java script
+                </p>
+
+
+            </div>
+            <div class="card m-3 p-3">
+                <img src="https://media.istockphoto.com/photos/hourglass-on-the-background-of-office-watch-as-time-passing-concept-picture-id1277004651?b=1&k=20&m=1277004651&s=170667a&w=0&h=DGYF3WJ-CdOob06xQFjqtVL3-EWFz60qYqcnA1p_cWs=" class="image" />
+                <h1 class="h1">counting time page</h1>
+                <p class="p">using html,css,java script
+                </p>
+
+
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    <section style="background-color: darkgray;background-image: linear-gradient(red,blue); padding: 10px;">
+        <div id="skills">
+            <h1 style="color: cornflowerblue;font-style: italic;">skills</h1>
+            <ul style="color: white;">
+                <li>python</li>
+                <li>html</li>
+                <li>css</li>
+                <li>java script</li>
+                <li>sql</li>
+                <li>react js</li>
+                <li>node js</li>
+                <li>java</li>
+
+            </ul>
+
+
+
+        </div>
+
+    </section>
+
+    <section>
+        <footer id="footer" style="text-align: center; background-image: url(https://media.istockphoto.com/photos/closeup-image-of-male-hands-using-smartphone-with-icon-telephone-picture-id1168945108?k=20&m=1168945108&s=612x612&w=0&h=MqKJyjMB1NJ33aRB9kjhxqP_GbPmEVB11saJi9sCuwM=);background-size: cover;">
+            <h1 style="color: cornflowerblue;font-style: italic; ">contact me</h1>
+            <a href="www.twitter.com ">twitter</a>
+            <a href="www.instagram.com ">instagram</a> @copy;sowjanyaMorampudi<br/> lingapalem(v)
+            <br/> vemsoor(m)
+            <br/> khammam(d) 507164
+            <br/>
+
+
+        </footer>
+    </section>
+
+
+
+
+</body>
+
+</html>
