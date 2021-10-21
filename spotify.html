@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <style>
+        .spotify-logo {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .home_background {
+            background: linear-gradient(50deg, #ff4169 0, #7c26f8 100%);
+            background-size: cover;
+        }
+        
+        .image {
+            height: 400px;
+            width: 350px;
+            padding-top: 70px;
+            margin-left: 10px;
+        }
+        
+        #clonefeatures {
+            text-align: center;
+        }
+        
+        .card {
+            border-color: darkslategrey;
+            border-width: 2px;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        .featuresh1 {
+            font-size: 20px;
+            color: black;
+        }
+        
+        .featurespra {
+            font-size: 15px;
+            color: gray;
+        }
+        
+        .imageapp {
+            width: 130px;
+            height: 300px;
+        }
+        
+        .layout {
+            width: 600px;
+            margin: auto;
+        }
+        
+        .accordion {
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background: rgb(105, 206, 105);
+            border-radius: 10px;
+        }
+        
+        .accordion__question p {
+            margin: 5px;
+            padding: 0;
+            font-family: Verdana;
+            font-size: 20px;
+        }
+        
+        .accordion__answer p {
+            margin: 5px;
+            padding: 10px;
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(255, 255, 255);
+            background: rgb(82, 170, 122);
+            border-radius: 10px;
+        }
+        
+        .accordion:hover {
+            cursor: pointer;
+        }
+        
+        .accordion__answer {
+            display: none;
+        }
+        
+        .accordion.active .accordion__answer {
+            display: block;
+        }
+        
+        .follow-us-section {
+            background-color: #0d2436;
+        }
+        
+        .follow-us-section-heading {
+            text-align: center;
+            color: white;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-weight: 700;
+        }
+        
+        .follow-us-icon-container {
+            background-color: #faf7e8;
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+            margin: 15px;
+            padding-top: 22px;
+            padding-bottom: 14px;
+            padding-right: 16px;
+            padding-left: 22px;
+        }
+        
+        .icon {
+            color: #d0b200;
+            font-size: 35px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container-fluid">
+
+            <img src="https://yt3.ggpht.com/ytc/AKedOLRh4oKc1i2eW4pRcPSL8gQejrjVq7Oplzthcgcurw=s900-c-k-c0x00ffffff-no-rj" class="spotify-logo" />
+            <a class="navbar-brand" href="#">spotify
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="navItem1" href="#home">
+                Home
+                <span class="sr-only">(current)</span>
+              </a>
+                    <a class="nav-link" href="#clonefeatures" id="navItem2">clone features</a>
+                    <a class="nav-link" href="#snapshot" id="navItem2">snapshot</a>
+                    <a class="nav-link" href="#forFAQs" id="navItem3">FAQs</a>
+                    <a class="nav-link" href="#followUsSection" id="navItem4">Follow us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="home" class="pt-5 pb-5 text-center home_background">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+
+
+                    <h1 style="color: white; font-size: 60px;padding: 10px; text-decoration: underline;">Spotify Clone</h1>
+
+                    <p style="color: white; font-size: 30px;">Get Your Own Music App like Spotify with our Spotify Clone Script. Excellent Music Streaming Platform that your Audience will Love.
+
+                    </p>
+
+                    <button class="btn btn-outline-success" style="width: 130px;height: 40px;"><a href="https://open.spotify.com/">spotify</a></button>
+                </div>
+
+
+                <div class="col-12 col-md-6">
+                    <img src="https://techcrunch.com/wp-content/uploads/2021/06/Copy-of-05-Create-Room.gif?w=680" class="image" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="clonefeatures" class="pt-5 pb-5 text-center">
+        <h1 style="text-align: center;">Spotify Clone Features</h1>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6">
+                    <h1 class="featuresh1" id="featuresh1">Stream Music List</h1>
+                    <p class="featurespra" id="featurep1">
+                        Users can explore their favorite playlist on any of mobile platforms, i.e Android or iOS as per their convenience.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h1 class="featuresh1" id="featuresh2">Advance Admin Panel</h1>
+                    <p class="featurespra" id="featurep2">Admin can manage the whole app and music streaming portal through an effective admin panel provided to them.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h1 class="featuresh1" id="featuresh3">Administrate Subscription Plan</h1>
+                    <p class="featurespra" id="featurep3">Admin is facilitated with a back-end panel through which they can easily manage their users and their subscription plan.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h1 class="featuresh1" id="featuresh4">Shuffle Music List</h1>
+                    <p class="featurespra" id="featurep4">
+                        Users can easily shuffle their favorite songs list to enjoy any of the songs randomly.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h1 class="featuresh1" id="featuresh5">Upload Music</h1>
+                    <p class="featurespra" id="featurep5">
+                        Admin can upload a new playlist from the back-end panel offered with Spotify clone for their app users.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h1 class="featuresh1" id="featuresh6">Social Media Login</h1>
+                    <p class="featurespra" id="featurep6">
+
+                        Users can log in using their social media platform or can use their login credentials to log in to the app.</p>
+                </div>
+            </div>
+
+        </div>
+        <button class="btn btn-outline-success" onclick="website()">website</button>
+        <button class="btn btn-outline-success " onclick="appusers()">app users</button>
+        <button class="btn btn-outline-success " onclick="admin()">admin</button>
+
+
+
+    </div>
+    <div id="snapshot" class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>spotify clone app</h1>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <img src="https://m.media-amazon.com/images/I/81yG9LbkxTL._SL1500_.jpg" class="imageapp" />
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <img src="https://lh3.googleusercontent.com/gGcv_FPh2lmhLRplHik4fFep-_PSop5FdejHtjhnBkSj3PxOTHXsf6vsBNw_HNIX0M54=s85" class="imageapp" />
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <img src="https://m.media-amazon.com/images/I/71xY1KKuPeS._SL1500_.jpg" class="imageapp" />
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <img src="https://m.media-amazon.com/images/I/515fEgyoCOS._SL1000_.jpg" class="imageapp" />
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <img src="https://m.media-amazon.com/images/I/61kPaOXU5oS._SL1500_.jpg" class="imageapp" />
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <img src="https://m.media-amazon.com/images/I/61fNN-hcueS._SL1181_.jpg" class="imageapp" />
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <img src="https://m.media-amazon.com/images/I/61CmzWpsRKL._SL1181_.jpg" class="imageapp" />
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <img src="https://m.media-amazon.com/images/I/61wRmzdNbuL._UL1181_.jpg" class="imageapp" />
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div id="forFAQs">
+        <div class="pt-5 pb-5 text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>spotify clone FAQs</h1>
+                    </div>
+
+
+                    <div class="layout">
+                        <div class="accordion">
+                            <div class="accordion__question">
+                                <p>can i claim complete ownership of spotify clone after purchase?</p>
+
+                            </div>
+                            <div class="accordion__answer">
+                                <p>Yes, Melodify is our IP. Once you purchase the license, you can claim complete ownership of the mobile app and website.</p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion__question">
+                                <p>Is your sourcecode encrypted?</p>
+
+                            </div>
+                            <div class="accordion__answer">
+                                <p>Yes, Sourcecode of the mobile app and website is encrypted.</p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion__question">
+                                <p>Do alphanso tech provide technical support after purchase?</p>
+
+                            </div>
+                            <div class="accordion__answer">
+                                <p>Yes, We do provide three months of free technical support.</p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion__question">
+                                <p>Can i customize spotify clone script?</p>
+
+                            </div>
+                            <div class="accordion__answer">
+                                <p>Yes, We can customize Spotify clone script as per your requirement.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <div class="accordion__question">
+                                <p>I have a question regarding this script.where do i ask?</p>
+                            </div>
+
+                            <div class="accordion__answer">
+                                <p>
+                                    Please drop us an email on info@alphansotech.com. We will get back to you in 12 working hours.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="follow-us-section pt-5 pb-5" id="followUsSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="follow-us-section-heading">Follow Us</h1>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-twitter icon"></i>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-instagram icon"></i>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-facebook icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        var featuresh1 = document.getElementById('featuresh1');
+        var featuresh2 = document.getElementById('featuresh2');
+        var featuresh3 = document.getElementById('featuresh3');
+        var featuresh4 = document.getElementById('featuresh4');
+        var featuresh5 = document.getElementById('featuresh5');
+        var featuresh6 = document.getElementById('featuresh6');
+        var featurep1 = document.getElementById('featurep1');
+        var featurep2 = document.getElementById('featurep2');
+        var featurep3 = document.getElementById('featurep3');
+        var featurep4 = document.getElementById('featurep4');
+        var featurep5 = document.getElementById('featurep5');
+        var featurep6 = document.getElementById('featurep6');
+
+
+        function website() {
+            featuresh1.textContent = "Create a profile";
+            featuresh2.textContent = "Music List";
+            featuresh3.textContent = "Select Playlist";
+            featuresh4.textContent = "Add Favorite";
+            featuresh5.textContent = "Payment Options";
+            featuresh6.textContent = "Social Share";
+            featurep1.textContent = "Users can create and edit the profile of theirs through the efficient web, including uploading their profile picture option also.";
+            featurep2.textContent = "Users can view the active music list to get a status update like which songs they have recently listened to, trendy, etc through the platform";
+            featurep3.textContent = "Browse for new songs to make smart choices from the available music list on the website; they can choose to play any as per their need.";
+            featurep4.textContent = "Choose to share details over social media platforms by adding single or multiple kinds of music to your favorite list.";
+            featurep5.textContent = "Users are allowed to pay conveniently using multiple payment options for updating their subscription plan with few taps on the web.";
+            featurep6.textContent = "Spotify clone script enables users to share their favorite songs, tracks on social channels with their friends and family hassle-free.";
+
+
+        }
+
+        function appusers() {
+            featuresh1.textContent = "Register/ Login";
+            featuresh2.textContent = "Dashboard";
+            featuresh3.textContent = "Leading Search";
+            featuresh4.textContent = "Create a Lovely Playlist";
+            featuresh5.textContent = "Secure Payment Gateway";
+            featuresh6.textContent = "Profile Settings";
+            featurep1.textContent = "Users can use the manual form or social media platforms to register themselves with the app.";
+            featurep2.textContent = "Users can explore popular music, trending tracks recently played, and much more through the app dashboard";
+            featurep3.textContent = "Users are facilitated with advanced features through which they can easily search their favorite music list according to the category";
+            featurep4.textContent = "If users want to add their favorite sons to the playlist to enjoy later,then then can do it easily through our spotify clone script.";
+            featurep5.textContent = "Any of the users who want to upgrade their subscription can easily pay through safe payment gateways provided in our app.";
+            featurep6.textContent = "Users can manage their profile through setting features, they are facilitated to update their profile image, name, etc as per their convenience.";
+
+        }
+
+        function admin() {
+            featuresh1.textContent = "Dashboard";
+            featuresh2.textContent = "Handle Users";
+            featuresh3.textContent = "Earnings";
+            featuresh4.textContent = "Sub Moderators";
+            featuresh5.textContent = "Audio Upload";
+            featuresh6.textContent = "Manage Different Categories";
+            featurep1.textContent = "Admin can manage and view recently add users,track through the admin dashboard provided with spotify clone script.";
+            featurep2.textContent = "The advanced admin panel of our Spotify clone facilitates the admin to manage users and also their subscription more accurately.";
+            featurep3.textContent = "Admin can check their site earning and other details through the admin panel proide3d to them with our Spotify clone";
+            featurep4.textContent = "Admin and other sub moderators added by the admin can easily manage and add content on the portal as well as on the app";
+            featurep5.textContent = "Admin can manage and upload new audios for their app users through the advanced admin panel of our Spotify clone script";
+            featurep6.textContent = "Our Spotify clone facilitates admin with an effective admin panel, they can use it to manage different categories in their music streaming app";
+
+        }
+        let answers = document.querySelectorAll(".accordion");
+        answers.forEach((event) => {
+            event.addEventListener("click", () => {
+                if (event.classList.contains("active")) {
+                    event.classList.remove("active");
+                } else {
+                    event.classList.add("active");
+                }
+            });
+        });
+    </script>
+
+
+
+    <script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+
+
+</body>
+
+</html>
