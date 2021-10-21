@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .image {
+            height: 100px;
+            width: 100px;
+        }
+        
+        .bg-container-home {
+            background-image: url(https://us.123rf.com/450wm/perhapzzz/perhapzzz1603/perhapzzz160300384/53680862-open-book-hardback-books-on-wooden-table-back-to-school-copy-space-for-text-.jpg?ver=6);
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background-size: cover;
+        }
+        
+        .card-home {
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            margin: 50px;
+        }
+        
+        .card-frontend {
+            background-color: rgb(101, 138, 134);
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .front-end-item {
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        .card-backend {
+            background-color: tomato;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .h1 {
+            font-size: 25px;
+            color: blueviolet;
+        }
+        
+        .bg-container {
+            background-color: #0d2436;
+        }
+        
+        .image {
+            height: 100px;
+            width: 100px;
+            margin-bottom: 10px;
+        }
+        
+        .back-ground {
+            background-color: #5a7184;
+            border-radius: 20px;
+            height: 36px;
+            width: 36px;
+            padding-bottom: 1px;
+            padding-top: 2px;
+        }
+        
+        .h1 {
+            color: #5a7184;
+            font-size: 20px;
+        }
+        
+        .list {
+            list-style-type: none;
+        }
+        
+        @media screen and (min-width:70em) {
+            .home {
+                display: grid;
+                grid-template-columns: 3fr 1fr;
+                column-gap: 20px;
+            }
+            .frontend {
+                margin-bottom: 0;
+            }
+            .backend {
+                border-top: 1px solid #ccc;
+                margin-top: 2em;
+            }
+        }
+        
+        .background-button {
+            background-color: greenyellow;
+            color: honeydew;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-#0c0521 bg-color-black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://lh3.googleusercontent.com/proxy/csdCLe3WpKO3ygi2Vp2wZn2BvtjEUBKDZRpbw3LzcHvpv35TBl37VwGKSY9mHMltp0K2ddxid1h6Py-EJWr5Hd_BN3x1BpEb0cEObP_LSeBP6QIs43W4KSRkr5c_ZA" class="food-munch-logo" width="36px" height="40px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="navItem1" href="#home">
+                        home
+                        <span class="sr-only">(current)</span>
+                    </a>
+
+                    <a class="nav-link" href="#frontend" id="navItem3">frontend</a>
+                    <a class="nav-link" href="#backend" id="navItem4">backend</a>
+                    <a class="nav-link" href="#features" id="navItem2">features</a>
+                    <a class="nav-link" href="#footer" id="navItem4">footer</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="home">
+        <div class="bg-container-home">
+
+            <div class="card-home">
+                <h1 id="homehead">NXTWAVE</h1>
+                <p id="homeparagraph">Get an edge by pursuing your dream career with personalised CCBP 4.0 programs.
+                    <br> Hear from CCBP 4.0 learners who are successfully placed with high paid jobs.</p>
+                <button class="btn btn-primary" id="homebutton"><a href="https://www.ccbp.in/intensive?gclid=Cj0KCQjwwY-LBhD6ARIsACvT72NxiR7ozc2uDnO4tjTVrCAiBfSMNOBcvZMwM8zbwCQAizS_-8v8vsgaAvAqEALw_wcB" target="_blank" style="color: white;">about us</a></button>
+                <button class="btn btn-primary" onclick="change()" id="homechange">change</button>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="frontend">
+
+
+        <div class="card-frontend">
+
+            <h1 id="frontendhead" onclick="fchange()">FRONT END TOPICS</h1>
+
+            <div class="row">
+
+                <div class="col-4 col-md-3 front-end-item">
+                    <h1 class="h1" id="fh1">HTML</h1>
+                    <p id="fp1">HTML is the standard markup language for Web pages. With HTML you can create your own Website. HTML is easy to learn - You will enjoy it!</p>
+                    <button id="fbutton1" class="btn btn-primary"><a href="https://www.w3schools.com/html/" target="_blank" style="color: white;">html</a></button>
+                </div>
+
+                <div class="col-4 col-md-3 front-end-item">
+                    <h1 class="h1" id="fh2">CSS</h1>
+                    <p id="fp2">CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed. This tutorial will teach you CSS from basic to advanced.</p>
+                    <button id="fbutton2" class="btn btn-primary"><a href="https://www.w3schools.com/css/" target="_blank" style="color: white;">css</a></button>
+                </div>
+                <div class="col-4 col-md-3 front-end-item">
+                    <h1 class="h1" id="fh3">javascript</h1>
+                    <p id="fp3">JavaScript is the world's most popular programming language. JavaScript is the programming language of the Web. JavaScript is easy to learn. This tutorial will teach you JavaScript from basic to advanced.!</p>
+                    <button id="fbutton3" class="btn btn-primary"><a href="https://www.w3schools.com/js/default.asp" target="_blank" style="color: white;">javascript</a></button>
+                </div>
+                <div class="col-4 col-md-3 front-end-item">
+                    <h1 class="h1" id="fh4">BOOTSTRAP</h1>
+                    <p id="fp4">Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites. Bootstrap is completely free to download and use!
+
+                    </p>
+                    <button id="fbutton4" class="btn btn-primary"><a href="https://www.w3schools.com/bootstrap/" target="_blank" style="color: white;">bootstrap</a></button>
+                </div>
+                <div class="col-4 col-md-3 front-end-item">
+                    <h1 class="h1" id="fh5">REACTJS</h1>
+                    <p id="fp5">React is a JavaScript library for building user interfaces. React is used to build single-page applications. React allows us to create reusable UI components.
+
+                    </p>
+                    <button id="fbutton5" class="btn btn-primary"><a href="w3schools.com/REACT/DEFAULT.ASP" target="_blank" style="color: white;">reactjs</a></button>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <div id="backend">
+
+
+        <div class="card-backend">
+            <div style=" text-align: center; ">
+                <h1 id="backendhead" onclick="bchange()">BACK END TOPICS</h1>
+            </div>
+            <div class="row">
+                <div class="col-4 col-md-3 front-end-item">
+                    <h1 class="h1" id="bh2">PYTHON</h1>
+                    <p id="bp1">Python is a popular programming language. Python can be used on a server to create web applications.</p>
+                    <button class="btn btn-primary " id="bbutton1"><a href="https://www.w3schools.com/python/ " target="_blank " style="color: white; ">python</a></button>
+                </div>
+
+                <div class="col-4 col-md-3 front-end-item">
+                    <h1 class="h1" id="bh3">RUBY</h1>
+                    <p id="bp2">Ruby is a dynamic, open source, object-oriented, general-purpose programming language. It was designed and developed in the mid-1990s by Yukihiro Matsumoto ("Matz ") in Japan. Ruby development began in February 1993 </p>
+                    <button class="btn btn-primary " id="bbutton2"><a href="https://www.w3schools.com/php/default.asp " target="_blank " style="color: white; ">ruby</a></button>
+                </div>
+                <div class="col-4 col-md-3 front-end-item">
+                    <h1 class="h1" id="bh4">PHP</h1>
+                    <p id="bp3">PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages. PHP is a widely-used, free, and efficient alternative to competitors such as Microsoft's ASP.
+
+                    </p>
+                    <button class="btn btn-primary " id="bbutton3"><a href="https://www.w3schools.com/js/default.asp " target="_blank " style="color: white; ">php</a></button>
+                </div>
+                <div class="col-4 col-md-3 front-end-item">
+                    <h1 class="h1" id="bh5">JAVA</h1>
+                    <p id="bp4">Java is a programming language. Java is used to develop mobile apps, web apps, desktop apps, games and much more.
+
+
+
+                    </p>
+                    <button class="btn btn-primary " id="bbutton4"><a href="https://www.w3schools.com/java/ " target="_blank " style="color: white; ">java</a></button>
+                </div>
+                <div class="col-4 col-md-3 front-end-item">
+                    <h1 class="h1" id="bh6">SCALA</h1>
+                    <p id="bp5">Scala is a modern multi-paradigm programming language designed to express common programming patterns in a concise, elegant, and type-safe way. smoothly integrates the features of object-oriented and functional languages.
+
+                    </p>
+                    <button class="btn btn-primary " id="bbutton5"><a href="https://www.tutorialspoint.com/scala/index.htm " target="_blank " style="color: white; ">scala</a></button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="features">
+        <div class="pt-5 pb-5 text-center ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-12 ">
+                        <h1 id="featuresmainhead " onclick="featureschange()">features that make design simply awesome</h1>
+                        <p>not sure if design is for you ? check out a few of the key features!</p>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex flex-row ">
+                        <img src="https://assets.ccbp.in/frontend/responsive-website/awsome-features-1-img.png " class="image " id="image1" />
+                        <div>
+                            <h1 id="featuresh1">vectors</h1>
+                            <p id="featuresp1">use svgs that always stay crisp and you can change the color as you go.</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 d-flex flex-row ">
+                        <img src="https://assets.ccbp.in/frontend/responsive-website/awsome-features-2-img.png " class="image " id="image2" />
+                        <div>
+                            <h1 id="featuresh2">forms</h1>
+                            <p id="featuresp2">use svgs that always stay crisp and you can change the color as you go.</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 d-flex flex-row ">
+                        <img src="https://assets.ccbp.in/frontend/responsive-website/awsome-features-3-img.png " class="image " id="image3" />
+                        <div>
+                            <h1 id="featuresh3">effects</h1>
+                            <p id="featuresp3">use svgs that always stay crisp and you can change the color as you go.</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 d-flex flex-row ">
+                        <img src="https://assets.ccbp.in/frontend/responsive-website/awsome-features-4-img.png " class="image " id="image4" />
+                        <div>
+                            <h1 id="featuresh4">paste css</h1>
+                            <p id="featuresp4">use svgs that always stay crisp and you can change the color as you go.</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 d-flex flex-row ">
+                        <img src="https://assets.ccbp.in/frontend/responsive-website/awsome-features-5-img.png " class="image " id="image5" />
+                        <div>
+                            <h1 id="featuresh5">responsive for start</h1>
+                            <p id="featuresp5">use svgs that always stay crisp and you can change the color as you go.</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 d-flex flex-row ">
+                        <img src="https://assets.ccbp.in/frontend/responsive-website/awsome-features-6-img.png " class="image " id="image6" />
+                        <div>
+                            <h1 id="featuresh6">library</h1>
+                            <p id="featuresp6">use svgs that always stay crisp and you can change the color as you go.</p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="bg-container pt-5 pb-5 ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-12 col-md-6 col-lg-3 text-center ">
+                        <img src="https://lh3.googleusercontent.com/proxy/csdCLe3WpKO3ygi2Vp2wZn2BvtjEUBKDZRpbw3LzcHvpv35TBl37VwGKSY9mHMltp0K2ddxid1h6Py-EJWr5Hd_BN3x1BpEb0cEObP_LSeBP6QIs43W4KSRkr5c_ZA " class="food-munch-logo " width="36px
+            " height="40px " class="image " />
+                        <div class="d-flex flex-row justify-content-center ">
+
+                        </div>
+
+                        <h1 class="h1 ">nxtwave</h1>
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-6 col-lg-4 ">
+                    <ul class="h1 list ">
+                        get to know us
+                        <li>about us</li>
+                        <li>carrer</li>
+                        <li>press releases</li>
+                        <li>gift a smile</li>
+                    </ul>
+                </div>
+
+
+                <hr />
+                <div class="col-12 ">
+                    <div class="d-flex flex-row justify-content-center ">
+                        <h1 class="h1 ">2021 by sowjanya created with bootstrap</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <script>
+        function change() {
+            document.getElementById('homehead').classList.toggle("background-button");
+            document.getElementById('homeparagraph').classList.toggle("background-button");
+
+            document.getElementById('homebutton').classList.toggle("background-button");
+            document.getElementById('homechange').classList.toggle("background-button");
+
+
+
+
+        }
+
+
+
+
+
+        function fchange() {
+            document.getElementById('fbutton1').classList.toggle("background-button");
+            document.getElementById('fbutton2').classList.toggle("background-button");
+
+            document.getElementById('fbutton3').classList.toggle("background-button");
+            document.getElementById('fbutton4').classList.toggle("background-button");
+            document.getElementById('fbutton5').classList.toggle("background-button");
+            document.getElementById('fh1').style.color = 'blue';
+            document.getElementById('fh1').style.fontStyle = 'italic';
+            document.getElementById('fh2').style.color = 'blue';
+            document.getElementById('fh2').style.fontStyle = 'italic';
+            document.getElementById('fh3').style.color = 'blue';
+            document.getElementById('fh3').style.fontStyle = 'italic';
+            document.getElementById('fh4').style.color = 'blue';
+            document.getElementById('fh4').style.fontStyle = 'italic';
+            document.getElementById('fh5').style.color = 'blue';
+            document.getElementById('fh5').style.fontStyle = 'italic';
+            document.getElementById('fp1').style.fontWeight = 'bold';
+            document.getElementById('fp2').style.fontWeight = 'bold';
+            document.getElementById('fp3').style.fontWeight = 'bold';
+            document.getElementById('fp4').style.fontWeight = 'bold';
+            document.getElementById('fp5').style.fontWeight = 'bold';
+            document.getElementById('frontendhead').style.color = 'blue';
+            document.getElementById('frontendhead').style.fontStyle = 'italic';
+
+
+
+        }
+
+        function bchange() {
+            document.getElementById('bbutton1').classList.toggle("background-button");
+            document.getElementById('bbutton2').classList.toggle("background-button");
+            document.getElementById('bbutton3').classList.toggle("background-button");
+            document.getElementById('bbutton4').classList.toggle("background-button");
+            document.getElementById('bbutton5').classList.toggle("background-button");
+            document.getElementById('bh2').style.color = 'blue';
+            document.getElementById('bh2').style.fontStyle = 'italic';
+            document.getElementById('bh3').style.color = 'blue';
+            document.getElementById('bh3').style.fontStyle = 'italic';
+            document.getElementById('bh4').style.color = 'blue';
+            document.getElementById('bh4').style.fontStyle = 'italic';
+            document.getElementById('bh5').style.color = 'blue';
+            document.getElementById('bh5').style.fontStyle = 'italic';
+            document.getElementById('bh6').style.color = 'blue';
+            document.getElementById('bh6').style.fontStyle = 'italic';
+            document.getElementById('bp1').style.fontWeight = 'bold';
+            document.getElementById('bp2').style.fontWeight = 'bold';
+            document.getElementById('bp3').style.fontWeight = 'bold';
+            document.getElementById('bp4').style.fontWeight = 'bold';
+            document.getElementById('bp5').style.fontWeight = 'bold';
+            document.getElementById('backendhead').style.color = 'blue';
+            document.getElementById('backendhead').style.fontStyle = 'italic';
+
+
+
+        }
+
+
+        function featureschange() {
+            document.getElementById('image1').src = 'https://assets.ccbp.in/frontend/responsive-website/awsome-features-6-img.png';
+            document.getElementById('image2').src = 'https://assets.ccbp.in/frontend/responsive-website/awsome-features-5-img.png';
+            document.getElementById('image3').src = 'https://assets.ccbp.in/frontend/responsive-website/awsome-features-4-img.png';
+            document.getElementById('image4').src = 'https://assets.ccbp.in/frontend/responsive-website/awsome-features-3-img.png';
+            document.getElementById('image5').src = 'https://assets.ccbp.in/frontend/responsive-website/awsome-features-2-img.png';
+            document.getElementById('image6').src = 'https://assets.ccbp.in/frontend/responsive-website/awsome-features-1-img.png';
+            document.getElementById('featuresh1').textContent = 'library';
+            document.getElementById('featuresh2').textContent = 'responsive for start';
+
+            document.getElementById('featuresh3').textContent = 'paste css';
+            document.getElementById('featuresh4').textContent = 'effects';
+
+            document.getElementById('featuresh5').textContent = 'forms';
+
+            document.getElementById('featuresh6').textContent = 'vectors';
+            document.getElementById('featuresp1').style.color = 'lightblue';
+            document.getElementById('featuresp2').style.color = 'lightblue';
+
+            document.getElementById('featuresp3').style.color = 'lightblue';
+
+            document.getElementById('featuresp4').style.color = 'lightblue';
+
+            document.getElementById('featuresp5').style.color = 'lightblue';
+
+            document.getElementById('featuresp6').style.color = 'lightblue';
+            document.getElementById('featuresmainhead').style.fontStyle = 'italic';
+            document.getElementById('featuresmainhead').style.color = 'blue';
+
+        }
+
+        function displaywindowsize() {
+            var w = window.outerWidth;
+            var h = window.outerHeight;
+            var txt = "window size : width=" + w + " , height=" + h;
+            document.getElementById('result').innerHTML = txt;
+        }
+        window.onresize = displaywindowsize;
+    </script>
+
+
+
+
+
+
+
+    <script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+
+</body>
+
+</html>
